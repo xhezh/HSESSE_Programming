@@ -4,14 +4,7 @@ using System;
 class LoL { 
     static void Main() {
         char x = char.Parse(Console.ReadLine());
-        if (char.IsDigit(x)) {
-            Console.WriteLine("Это цифра");
-        }
-        else if (char.IsLetter(x)) {
-            Console.WriteLine("Это буква");
-        }
-        else {
-            Console.WriteLine("Это ни буква, ни цифра");
-        }
+
+        Console.WriteLine(x >= '0' && x <= '9' ? "Это цифра" : (x >= 'а' && x <= 'я' || x >= 'А' && x <= 'Я' ? "Это буква" : "Это ни буква, ни цифра"));
     }
 }
