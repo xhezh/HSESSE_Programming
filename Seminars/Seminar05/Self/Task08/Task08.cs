@@ -10,7 +10,7 @@ class LoL {
             Console.WriteLine("K не должно превышать количество разрядов исходного числа.");
         }
         else {
-            while (Math.Pow(10, k) < x) {
+            while (Math.Pow(10, k) <= x) {
                 x /= 10;
             }
             Console.WriteLine(x);
